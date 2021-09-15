@@ -1,10 +1,10 @@
 [package]
-name = "RustLibrary"
+name = "rust_library"
 version = "0.1.1"
 authors = ["Sumeru Chatterjee <sumeru.chatterjee@me.com"]
 description = "Example static library project built for iOS"
 publish = false
 
 [lib]
-name = "RustLibrary"
+name = "rust_library"
 crate-type = ["staticlib", "cdylib"]

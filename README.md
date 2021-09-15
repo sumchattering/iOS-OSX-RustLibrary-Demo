@@ -2,7 +2,9 @@
 
 ## Introduction
 
-## Environment
+Rust is a modern cross platform language and many companies are now using it as a cross platform solution instead of C/C++ beacuse of its many advantages. Here is an example setup for iOS/OSX to have cross-platform code in rust and then use it from the iOS / OSX app.
+
+## Setup
 
 Step 1. **Install Xcode** First, we have to [install Xcode](https://itunes.apple.com/us/app/xcode/id497799835?ls=1&mt=12) and then set up Xcode build tools. If you already have the build tools installed and they are up to date, you can skip this step.
 
@@ -26,32 +28,8 @@ Step 4. **cargo-lipo** When you installed Rust, it also installed cargo, which i
 
 Step 5. **Rust Xcode Plugin** Install the Rust Xcode Plugin from https://github.com/BrainiumLLC/rust-xcode-plugin. Clone the directory and run the setup.sh file as root using sudo. You will have to quit and reinstall Xcode at which point you should see a popup to load the bundle.
 
-## New Project Setup
-
-First we create a new multiplatform iOS-OSX project in Xcode from `File\New\Project…` and select the `iOS\Application\Single View Application` template
-
-![Screen Shot 2021-09-15 at 12.40.57 PM](/Users/sumeruchatterjee/Library/Application Support/typora-user-images/Screen Shot 2021-09-15 at 12.40.57 PM.png)
-
-To make a cargo library we run the following command from the command line 
-
-```bash
-cargo new RustLibrary --lib
-```
-
-This should create all necessary files for the library. To build our RustLibrary we use
-
-```bash
-cargo lipo --release
-```
-
-from inside the RustLibrary directory.
-
-## Limitations
-
-## Future Work
-
 ## References
 
 1. ##### Building and Deploying a Rust library on iOS https://mozilla.github.io/firefox-browser-architecture/experiments/2017-09-06-rust-on-ios.html
 
-2. 
+2. ##### Cargo lip macos building issue on BigSur https://github.com/TimNN/cargo-lipo/issues/41
