@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,13 @@
 		2D23059026F1FE520028CB07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D23056426F1FE520028CB07 /* Assets.xcassets */; };
 		2D2305A326F203580028CB07 /* Cargo.toml in Resources */ = {isa = PBXBuildFile; fileRef = 2D2305A026F203580028CB07 /* Cargo.toml */; };
 		2D2305A426F203580028CB07 /* lib.rs in Resources */ = {isa = PBXBuildFile; fileRef = 2D2305A226F203580028CB07 /* lib.rs */; };
+		2D2305A826F208710028CB07 /* libRustLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2305A726F208710028CB07 /* libRustLibrary.a */; };
+		2D2305AA26F2087E0028CB07 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2D2305A926F2087E0028CB07 /* README.md */; };
+		2D2305AC26F208C40028CB07 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2305AB26F208C40028CB07 /* libresolv.tbd */; };
+		2D2305AF26F20AD70028CB07 /* RustLibraryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2305AE26F20AD70028CB07 /* RustLibraryInterface.swift */; };
+		2D8D915326F213AD004DD4BB /* RustLibraryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2305AE26F20AD70028CB07 /* RustLibraryInterface.swift */; };
+		2D8D915426F213D3004DD4BB /* libRustLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2305A726F208710028CB07 /* libRustLibrary.a */; };
+		2D8D915626F213DB004DD4BB /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8D915526F213DB004DD4BB /* libresolv.tbd */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +61,12 @@
 		2D2305A026F203580028CB07 /* Cargo.toml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cargo.toml; sourceTree = "<group>"; };
 		2D2305A226F203580028CB07 /* lib.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lib.rs; sourceTree = "<group>"; };
 		2D2305A526F2062D0028CB07 /* RustLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RustLibrary.h; sourceTree = "<group>"; };
+		2D2305A726F208710028CB07 /* libRustLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libRustLibrary.a; path = RustLibrary/target/universal/release/libRustLibrary.a; sourceTree = "<group>"; };
+		2D2305A926F2087E0028CB07 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2D2305AB26F208C40028CB07 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
+		2D2305AD26F2090E0028CB07 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		2D2305AE26F20AD70028CB07 /* RustLibraryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustLibraryInterface.swift; sourceTree = "<group>"; };
+		2D8D915526F213DB004DD4BB /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +74,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2305AC26F208C40028CB07 /* libresolv.tbd in Frameworks */,
+				2D2305A826F208710028CB07 /* libRustLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +83,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8D915626F213DB004DD4BB /* libresolv.tbd in Frameworks */,
+				2D8D915426F213D3004DD4BB /* libRustLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,6 +108,7 @@
 		2D23055C26F1FE500028CB07 = {
 			isa = PBXGroup;
 			children = (
+				2D2305A926F2087E0028CB07 /* README.md */,
 				2D23056126F1FE510028CB07 /* Shared */,
 				2D23056B26F1FE520028CB07 /* iOS */,
 				2D23057226F1FE520028CB07 /* macOS */,
@@ -98,6 +116,7 @@
 				2D23057C26F1FE520028CB07 /* Tests iOS */,
 				2D23058726F1FE520028CB07 /* Tests macOS */,
 				2D23056A26F1FE520028CB07 /* Products */,
+				2D2305A626F208710028CB07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -107,6 +126,8 @@
 				2D23056226F1FE510028CB07 /* iOS_OSX_RustLibrary_DemoApp.swift */,
 				2D23056326F1FE510028CB07 /* ContentView.swift */,
 				2D23056426F1FE520028CB07 /* Assets.xcassets */,
+				2D2305AD26F2090E0028CB07 /* Bridging-Header.h */,
+				2D2305AE26F20AD70028CB07 /* RustLibraryInterface.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -175,6 +196,16 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		2D2305A626F208710028CB07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2D2305AB26F208C40028CB07 /* libresolv.tbd */,
+				2D8D915526F213DB004DD4BB /* libresolv.tbd */,
+				2D2305A726F208710028CB07 /* libRustLibrary.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -182,6 +213,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D23059326F1FE520028CB07 /* Build configuration list for PBXNativeTarget "iOS-OSX-RustLibrary-Demo (iOS)" */;
 			buildPhases = (
+				2D2305B026F20DB50028CB07 /* Build Rust Library */,
 				2D23056526F1FE520028CB07 /* Sources */,
 				2D23056626F1FE520028CB07 /* Frameworks */,
 				2D23056726F1FE520028CB07 /* Resources */,
@@ -199,6 +231,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D23059626F1FE520028CB07 /* Build configuration list for PBXNativeTarget "iOS-OSX-RustLibrary-Demo (macOS)" */;
 			buildPhases = (
+				2D8D915726F21555004DD4BB /* Build Rust Library */,
 				2D23056D26F1FE520028CB07 /* Sources */,
 				2D23056E26F1FE520028CB07 /* Frameworks */,
 				2D23056F26F1FE520028CB07 /* Resources */,
@@ -301,6 +334,7 @@
 			files = (
 				2D2305A426F203580028CB07 /* lib.rs in Resources */,
 				2D2305A326F203580028CB07 /* Cargo.toml in Resources */,
+				2D2305AA26F2087E0028CB07 /* README.md in Resources */,
 				2D23058F26F1FE520028CB07 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,11 +363,52 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2D2305B026F20DB50028CB07 /* Build Rust Library */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Rust Library";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\n(cd RustLibrary; $HOME/.cargo/bin/cargo lipo --xcode-integ)\n";
+		};
+		2D8D915726F21555004DD4BB /* Build Rust Library */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Rust Library";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "(cd RustLibrary; $HOME/.cargo/bin/cargo lipo --xcode-integ)\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2D23056526F1FE520028CB07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2305AF26F20AD70028CB07 /* RustLibraryInterface.swift in Sources */,
 				2D23058D26F1FE520028CB07 /* ContentView.swift in Sources */,
 				2D23058B26F1FE520028CB07 /* iOS_OSX_RustLibrary_DemoApp.swift in Sources */,
 			);
@@ -343,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8D915326F213AD004DD4BB /* RustLibraryInterface.swift in Sources */,
 				2D23058E26F1FE520028CB07 /* ContentView.swift in Sources */,
 				2D23058C26F1FE520028CB07 /* iOS_OSX_RustLibrary_DemoApp.swift in Sources */,
 			);
@@ -431,10 +507,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/RustLibrary/target/universal/debug";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Shared/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -484,9 +562,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/RustLibrary/target/universal/debug";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Shared/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Release;

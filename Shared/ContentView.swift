@@ -8,8 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    let hello = RustLibraryInterface().sayHello(to: "world")
+    
     var body: some View {
-        Text("Hello, world!")
+        Text(hello)
             .padding()
     }
 }

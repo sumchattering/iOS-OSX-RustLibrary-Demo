@@ -24,9 +24,11 @@ rustup target add aarch64-apple-ios armv7-apple-ios armv7s-apple-ios x86_64-appl
 
 Step 4. **cargo-lipo** When you installed Rust, it also installed cargo, which is a package manager similar to pip, gems etc. Now we will use cargo to install `cargo-lipo`. This is a cargo subcommand which automatically creates a universal library for use with iOS. Without this crate, cross compiling Rust to work on iOS is infinitely harder.
 
+Step 5. **Rust Xcode Plugin** Install the Rust Xcode Plugin from https://github.com/BrainiumLLC/rust-xcode-plugin. Clone the directory and run the setup.sh file as root using sudo. You will have to quit and reinstall Xcode at which point you should see a popup to load the bundle.
+
 ## New Project Setup
 
-First we create a new multiplatform iOS-OSX project in Xcode from File>New>Project in the Xcode topbar menu.
+First we create a new multiplatform iOS-OSX project in Xcode from `File\New\Project…` and select the `iOS\Application\Single View Application` template
 
 ![Screen Shot 2021-09-15 at 12.40.57 PM](/Users/sumeruchatterjee/Library/Application Support/typora-user-images/Screen Shot 2021-09-15 at 12.40.57 PM.png)
 
@@ -36,6 +38,20 @@ To make a cargo library we run the following command from the command line
 cargo new RustLibrary --lib
 ```
 
+This should create all necessary files for the library. To build our RustLibrary we use
+
+```bash
+cargo lipo --release
+```
+
+from inside the RustLibrary directory.
+
 ## Limitations
 
 ## Future Work
+
+## References
+
+1. ##### Building and Deploying a Rust library on iOS https://mozilla.github.io/firefox-browser-architecture/experiments/2017-09-06-rust-on-ios.html
+
+2. 
