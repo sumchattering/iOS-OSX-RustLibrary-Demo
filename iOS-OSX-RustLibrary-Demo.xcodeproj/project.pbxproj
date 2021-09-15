@@ -22,8 +22,6 @@
 		2D8D915626F213DB004DD4BB /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8D915526F213DB004DD4BB /* libresolv.tbd */; };
 		2D8D927426F21C50004DD4BB /* Cargo.toml in Resources */ = {isa = PBXBuildFile; fileRef = 2D8D915926F21C50004DD4BB /* Cargo.toml */; };
 		2D8D934F26F21C52004DD4BB /* lib.rs in Resources */ = {isa = PBXBuildFile; fileRef = 2D8D927226F21C50004DD4BB /* lib.rs */; };
-		2D8D935326F220BF004DD4BB /* librust_library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8D935226F220BF004DD4BB /* librust_library.a */; };
-		2D8D935426F22525004DD4BB /* librust_library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8D935226F220BF004DD4BB /* librust_library.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,7 +74,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D8D935426F22525004DD4BB /* librust_library.a in Frameworks */,
 				2D2305AC26F208C40028CB07 /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,7 +82,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D8D935326F220BF004DD4BB /* librust_library.a in Frameworks */,
 				2D8D915626F213DB004DD4BB /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,9 +508,14 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/rust_library/target/universal/debug";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=arm64]" = "$(PROJECT_DIR)/rust_library/target/aarch64-apple-ios/debug";
+				"LIBRARY_SEARCH_PATHS[sdk=macosx*][arch=arm64]" = "$(PROJECT_DIR)/rust_library/target/aarch64-apple-darwin/debug";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=x86_64]" = "$(PROJECT_DIR)/rust_library/target/x86_64-apple-ios/debug";
+				"LIBRARY_SEARCH_PATHS[sdk=macosx*][arch=x86_64]" = "$(PROJECT_DIR)/rust_library/target/x86_64-apple-darwin/debug";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-lrust_library";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Shared/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -567,8 +568,13 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/rust_library/target/universal/release";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=arm64]" = "$(PROJECT_DIR)/rust_library/target/aarch64-apple-ios/release";
+				"LIBRARY_SEARCH_PATHS[sdk=macosx*][arch=arm64]" = "$(PROJECT_DIR)/rust_library/target/aarch64-apple-darwin/release";
+				"LIBRARY_SEARCH_PATHS[sdk=iphoneos*][arch=x86_64]" = "$(PROJECT_DIR)/rust_library/target/x86_64-apple-ios/release";
+				"LIBRARY_SEARCH_PATHS[sdk=macosx*][arch=x86_64]" = "$(PROJECT_DIR)/rust_library/target/x86_64-apple-darwin/release";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				OTHER_LDFLAGS = "-lrust_library";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/Shared/Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
