@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import RustLibrary
 
 struct ContentView: View {
     

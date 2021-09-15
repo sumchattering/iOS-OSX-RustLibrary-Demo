@@ -22,6 +22,7 @@
 		2D8D915626F213DB004DD4BB /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8D915526F213DB004DD4BB /* libresolv.tbd */; };
 		2D8D927426F21C50004DD4BB /* Cargo.toml in Resources */ = {isa = PBXBuildFile; fileRef = 2D8D915926F21C50004DD4BB /* Cargo.toml */; };
 		2D8D934F26F21C52004DD4BB /* lib.rs in Resources */ = {isa = PBXBuildFile; fileRef = 2D8D927226F21C50004DD4BB /* lib.rs */; };
+		2DD8598F26F2443500A86606 /* RustLibrary in Frameworks */ = {isa = PBXBuildFile; productRef = 2DD8598E26F2443500A86606 /* RustLibrary */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,6 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DD8598F26F2443500A86606 /* RustLibrary in Frameworks */,
 				2D2305AC26F208C40028CB07 /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,6 +225,9 @@
 			dependencies = (
 			);
 			name = "iOS-Demo (iOS)";
+			packageProductDependencies = (
+				2DD8598E26F2443500A86606 /* RustLibrary */,
+			);
 			productName = "iOS-OSX-RustLibrary-Demo (iOS)";
 			productReference = 2D23056926F1FE520028CB07 /* iOS-OSX-RustLibrary-Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -838,6 +843,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2DD8598E26F2443500A86606 /* RustLibrary */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RustLibrary;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2D23055D26F1FE500028CB07 /* Project object */;
 }
