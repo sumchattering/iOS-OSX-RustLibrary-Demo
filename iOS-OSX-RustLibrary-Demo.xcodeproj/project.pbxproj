@@ -15,6 +15,8 @@
 		2D23058E26F1FE520028CB07 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D23056326F1FE510028CB07 /* ContentView.swift */; };
 		2D23058F26F1FE520028CB07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D23056426F1FE520028CB07 /* Assets.xcassets */; };
 		2D23059026F1FE520028CB07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D23056426F1FE520028CB07 /* Assets.xcassets */; };
+		2D2305A326F203580028CB07 /* Cargo.toml in Resources */ = {isa = PBXBuildFile; fileRef = 2D2305A026F203580028CB07 /* Cargo.toml */; };
+		2D2305A426F203580028CB07 /* lib.rs in Resources */ = {isa = PBXBuildFile; fileRef = 2D2305A226F203580028CB07 /* lib.rs */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,9 @@
 		2D23058426F1FE520028CB07 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D23058826F1FE520028CB07 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		2D23058A26F1FE520028CB07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D2305A026F203580028CB07 /* Cargo.toml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cargo.toml; sourceTree = "<group>"; };
+		2D2305A226F203580028CB07 /* lib.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lib.rs; sourceTree = "<group>"; };
+		2D2305A526F2062D0028CB07 /* RustLibrary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RustLibrary.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +94,7 @@
 				2D23056126F1FE510028CB07 /* Shared */,
 				2D23056B26F1FE520028CB07 /* iOS */,
 				2D23057226F1FE520028CB07 /* macOS */,
+				2D23059F26F203580028CB07 /* RustLibrary */,
 				2D23057C26F1FE520028CB07 /* Tests iOS */,
 				2D23058726F1FE520028CB07 /* Tests macOS */,
 				2D23056A26F1FE520028CB07 /* Products */,
@@ -149,6 +155,24 @@
 				2D23058A26F1FE520028CB07 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		2D23059F26F203580028CB07 /* RustLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				2D2305A026F203580028CB07 /* Cargo.toml */,
+				2D2305A126F203580028CB07 /* src */,
+			);
+			path = RustLibrary;
+			sourceTree = "<group>";
+		};
+		2D2305A126F203580028CB07 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2D2305A226F203580028CB07 /* lib.rs */,
+				2D2305A526F2062D0028CB07 /* RustLibrary.h */,
+			);
+			path = src;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,6 +299,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D2305A426F203580028CB07 /* lib.rs in Resources */,
+				2D2305A326F203580028CB07 /* Cargo.toml in Resources */,
 				2D23058F26F1FE520028CB07 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
