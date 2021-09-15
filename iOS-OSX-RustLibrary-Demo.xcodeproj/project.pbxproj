@@ -23,6 +23,7 @@
 		2D8D927426F21C50004DD4BB /* Cargo.toml in Resources */ = {isa = PBXBuildFile; fileRef = 2D8D915926F21C50004DD4BB /* Cargo.toml */; };
 		2D8D934F26F21C52004DD4BB /* lib.rs in Resources */ = {isa = PBXBuildFile; fileRef = 2D8D927226F21C50004DD4BB /* lib.rs */; };
 		2D8D935326F220BF004DD4BB /* librust_library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8D935226F220BF004DD4BB /* librust_library.a */; };
+		2D8D935426F22525004DD4BB /* librust_library.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8D935226F220BF004DD4BB /* librust_library.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D8D935426F22525004DD4BB /* librust_library.a in Frameworks */,
 				2D2305AC26F208C40028CB07 /* libresolv.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -211,9 +213,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2D23056826F1FE520028CB07 /* iOS-OSX-RustLibrary-Demo (iOS) */ = {
+		2D23056826F1FE520028CB07 /* iOS-Demo (iOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D23059326F1FE520028CB07 /* Build configuration list for PBXNativeTarget "iOS-OSX-RustLibrary-Demo (iOS)" */;
+			buildConfigurationList = 2D23059326F1FE520028CB07 /* Build configuration list for PBXNativeTarget "iOS-Demo (iOS)" */;
 			buildPhases = (
 				2D2305B026F20DB50028CB07 /* Build Rust Library */,
 				2D23056526F1FE520028CB07 /* Sources */,
@@ -224,14 +226,14 @@
 			);
 			dependencies = (
 			);
-			name = "iOS-OSX-RustLibrary-Demo (iOS)";
+			name = "iOS-Demo (iOS)";
 			productName = "iOS-OSX-RustLibrary-Demo (iOS)";
 			productReference = 2D23056926F1FE520028CB07 /* iOS-OSX-RustLibrary-Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D23057026F1FE520028CB07 /* iOS-OSX-RustLibrary-Demo (macOS) */ = {
+		2D23057026F1FE520028CB07 /* OSX-Demo (macOS) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D23059626F1FE520028CB07 /* Build configuration list for PBXNativeTarget "iOS-OSX-RustLibrary-Demo (macOS)" */;
+			buildConfigurationList = 2D23059626F1FE520028CB07 /* Build configuration list for PBXNativeTarget "OSX-Demo (macOS)" */;
 			buildPhases = (
 				2D8D915726F21555004DD4BB /* Build Rust Library */,
 				2D23056D26F1FE520028CB07 /* Sources */,
@@ -242,7 +244,7 @@
 			);
 			dependencies = (
 			);
-			name = "iOS-OSX-RustLibrary-Demo (macOS)";
+			name = "OSX-Demo (macOS)";
 			productName = "iOS-OSX-RustLibrary-Demo (macOS)";
 			productReference = 2D23057126F1FE520028CB07 /* iOS-OSX-RustLibrary-Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -321,8 +323,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2D23056826F1FE520028CB07 /* iOS-OSX-RustLibrary-Demo (iOS) */,
-				2D23057026F1FE520028CB07 /* iOS-OSX-RustLibrary-Demo (macOS) */,
+				2D23056826F1FE520028CB07 /* iOS-Demo (iOS) */,
+				2D23057026F1FE520028CB07 /* OSX-Demo (macOS) */,
 				2D23057826F1FE520028CB07 /* Tests iOS */,
 				2D23058326F1FE520028CB07 /* Tests macOS */,
 			);
@@ -447,12 +449,12 @@
 /* Begin PBXTargetDependency section */
 		2D23057B26F1FE520028CB07 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D23056826F1FE520028CB07 /* iOS-OSX-RustLibrary-Demo (iOS) */;
+			target = 2D23056826F1FE520028CB07 /* iOS-Demo (iOS) */;
 			targetProxy = 2D23057A26F1FE520028CB07 /* PBXContainerItemProxy */;
 		};
 		2D23058626F1FE520028CB07 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D23057026F1FE520028CB07 /* iOS-OSX-RustLibrary-Demo (macOS) */;
+			target = 2D23057026F1FE520028CB07 /* OSX-Demo (macOS) */;
 			targetProxy = 2D23058526F1FE520028CB07 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -564,7 +566,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/rust_library/target/universal/debug";
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/rust_library/target/universal/release";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
@@ -579,6 +581,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99SY58SLAZ;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -614,6 +618,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 99SY58SLAZ;
+				ENABLE_BITCODE = NO;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -650,8 +656,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 99SY58SLAZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -672,8 +680,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 99SY58SLAZ;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = macOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -785,7 +795,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D23059326F1FE520028CB07 /* Build configuration list for PBXNativeTarget "iOS-OSX-RustLibrary-Demo (iOS)" */ = {
+		2D23059326F1FE520028CB07 /* Build configuration list for PBXNativeTarget "iOS-Demo (iOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D23059426F1FE520028CB07 /* Debug */,
@@ -794,7 +804,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D23059626F1FE520028CB07 /* Build configuration list for PBXNativeTarget "iOS-OSX-RustLibrary-Demo (macOS)" */ = {
+		2D23059626F1FE520028CB07 /* Build configuration list for PBXNativeTarget "OSX-Demo (macOS)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D23059726F1FE520028CB07 /* Debug */,
