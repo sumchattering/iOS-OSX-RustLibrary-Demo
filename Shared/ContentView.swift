@@ -9,10 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     
-    let hello = RustLibraryInterface().sayHello(to: "world")
+    let hello1 = RustLibraryObjCWrapper().sayHello("world")
+    let hello2 = RustLibrarySwiftInterface().sayHello(to: "world")
     
     var body: some View {
-        Text(hello)
+        Text(hello1)
             .padding()
     }
 }

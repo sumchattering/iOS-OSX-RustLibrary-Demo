@@ -8,6 +8,7 @@
 #ifndef Bridging_Header_h__h
 #define Bridging_Header_h__h
 
+#import "RustLibraryObjCWrapper.h"
 #import "RustLibrary.h"
 
 #endif /* Bridging_Header_h__h */

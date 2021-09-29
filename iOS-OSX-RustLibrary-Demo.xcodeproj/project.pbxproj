@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D1FAEA927049FFE001C0986 /* RustLibraryObjCWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1FAEA827049FFE001C0986 /* RustLibraryObjCWrapper.m */; };
+		2D1FAEAA27049FFE001C0986 /* RustLibraryObjCWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1FAEA827049FFE001C0986 /* RustLibraryObjCWrapper.m */; };
+		2D1FAEAC2704A6EC001C0986 /* RustLibrarySwiftInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1FAEAB2704A6EC001C0986 /* RustLibrarySwiftInterface.swift */; };
+		2D1FAEAD2704A6EC001C0986 /* RustLibrarySwiftInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1FAEAB2704A6EC001C0986 /* RustLibrarySwiftInterface.swift */; };
 		2D23057E26F1FE520028CB07 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D23057D26F1FE520028CB07 /* Tests_iOS.swift */; };
 		2D23058926F1FE520028CB07 /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D23058826F1FE520028CB07 /* Tests_macOS.swift */; };
 		2D23058B26F1FE520028CB07 /* iOS_OSX_RustLibrary_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D23056226F1FE510028CB07 /* iOS_OSX_RustLibrary_DemoApp.swift */; };
@@ -17,8 +21,6 @@
 		2D23059026F1FE520028CB07 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D23056426F1FE520028CB07 /* Assets.xcassets */; };
 		2D2305AA26F2087E0028CB07 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2D2305A926F2087E0028CB07 /* README.md */; };
 		2D2305AC26F208C40028CB07 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2305AB26F208C40028CB07 /* libresolv.tbd */; };
-		2D2305AF26F20AD70028CB07 /* RustLibraryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2305AE26F20AD70028CB07 /* RustLibraryInterface.swift */; };
-		2D8D915326F213AD004DD4BB /* RustLibraryInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D2305AE26F20AD70028CB07 /* RustLibraryInterface.swift */; };
 		2D8D915626F213DB004DD4BB /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D8D915526F213DB004DD4BB /* libresolv.tbd */; };
 		2D8D927426F21C50004DD4BB /* Cargo.toml in Resources */ = {isa = PBXBuildFile; fileRef = 2D8D915926F21C50004DD4BB /* Cargo.toml */; };
 		2D8D934F26F21C52004DD4BB /* lib.rs in Resources */ = {isa = PBXBuildFile; fileRef = 2D8D927226F21C50004DD4BB /* lib.rs */; };
@@ -42,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D1FAEA727049FFE001C0986 /* RustLibraryObjCWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RustLibraryObjCWrapper.h; sourceTree = "<group>"; };
+		2D1FAEA827049FFE001C0986 /* RustLibraryObjCWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RustLibraryObjCWrapper.m; sourceTree = "<group>"; };
+		2D1FAEAB2704A6EC001C0986 /* RustLibrarySwiftInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustLibrarySwiftInterface.swift; sourceTree = "<group>"; };
 		2D23056226F1FE510028CB07 /* iOS_OSX_RustLibrary_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_OSX_RustLibrary_DemoApp.swift; sourceTree = "<group>"; };
 		2D23056326F1FE510028CB07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2D23056426F1FE520028CB07 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -60,7 +65,6 @@
 		2D2305A926F2087E0028CB07 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2D2305AB26F208C40028CB07 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.5.sdk/usr/lib/libresolv.tbd; sourceTree = DEVELOPER_DIR; };
 		2D2305AD26F2090E0028CB07 /* Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
-		2D2305AE26F20AD70028CB07 /* RustLibraryInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustLibraryInterface.swift; sourceTree = "<group>"; };
 		2D8D915526F213DB004DD4BB /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
 		2D8D915926F21C50004DD4BB /* Cargo.toml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cargo.toml; sourceTree = "<group>"; };
 		2D8D927226F21C50004DD4BB /* lib.rs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = lib.rs; sourceTree = "<group>"; };
@@ -125,7 +129,9 @@
 				2D23056326F1FE510028CB07 /* ContentView.swift */,
 				2D23056426F1FE520028CB07 /* Assets.xcassets */,
 				2D2305AD26F2090E0028CB07 /* Bridging-Header.h */,
-				2D2305AE26F20AD70028CB07 /* RustLibraryInterface.swift */,
+				2D1FAEA727049FFE001C0986 /* RustLibraryObjCWrapper.h */,
+				2D1FAEA827049FFE001C0986 /* RustLibraryObjCWrapper.m */,
+				2D1FAEAB2704A6EC001C0986 /* RustLibrarySwiftInterface.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -292,9 +298,11 @@
 				TargetAttributes = {
 					2D23056826F1FE520028CB07 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					2D23057026F1FE520028CB07 = {
 						CreatedOnToolsVersion = 12.5;
+						LastSwiftMigration = 1250;
 					};
 					2D23057826F1FE520028CB07 = {
 						CreatedOnToolsVersion = 12.5;
@@ -408,9 +416,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D2305AF26F20AD70028CB07 /* RustLibraryInterface.swift in Sources */,
 				2D23058D26F1FE520028CB07 /* ContentView.swift in Sources */,
+				2D1FAEAC2704A6EC001C0986 /* RustLibrarySwiftInterface.swift in Sources */,
 				2D23058B26F1FE520028CB07 /* iOS_OSX_RustLibrary_DemoApp.swift in Sources */,
+				2D1FAEA927049FFE001C0986 /* RustLibraryObjCWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -418,9 +427,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D8D915326F213AD004DD4BB /* RustLibraryInterface.swift in Sources */,
 				2D23058E26F1FE520028CB07 /* ContentView.swift in Sources */,
+				2D1FAEAD2704A6EC001C0986 /* RustLibrarySwiftInterface.swift in Sources */,
 				2D23058C26F1FE520028CB07 /* iOS_OSX_RustLibrary_DemoApp.swift in Sources */,
+				2D1FAEAA27049FFE001C0986 /* RustLibraryObjCWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -586,6 +596,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99SY58SLAZ;
 				ENABLE_BITCODE = NO;
@@ -613,6 +624,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nodemaker.iOS-OSX-RustLibrary-Demo";
 				PRODUCT_NAME = "iOS-OSX-RustLibrary-Demo";
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -623,6 +635,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 99SY58SLAZ;
 				ENABLE_BITCODE = NO;
@@ -661,6 +674,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
@@ -676,6 +690,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.nodemaker.iOS-OSX-RustLibrary-Demo";
 				PRODUCT_NAME = "iOS-OSX-RustLibrary-Demo";
 				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
@@ -685,6 +700,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
