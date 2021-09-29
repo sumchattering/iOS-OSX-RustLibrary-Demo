@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2D1FAEA927049FFE001C0986 /* RustLibraryObjCWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1FAEA827049FFE001C0986 /* RustLibraryObjCWrapper.m */; };
-		2D1FAEAA27049FFE001C0986 /* RustLibraryObjCWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D1FAEA827049FFE001C0986 /* RustLibraryObjCWrapper.m */; };
+		2D1FAEA927049FFE001C0986 /* RustLibraryObjCWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2D1FAEA827049FFE001C0986 /* RustLibraryObjCWrapper.mm */; };
+		2D1FAEAA27049FFE001C0986 /* RustLibraryObjCWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2D1FAEA827049FFE001C0986 /* RustLibraryObjCWrapper.mm */; };
 		2D1FAEAC2704A6EC001C0986 /* RustLibrarySwiftInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1FAEAB2704A6EC001C0986 /* RustLibrarySwiftInterface.swift */; };
 		2D1FAEAD2704A6EC001C0986 /* RustLibrarySwiftInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1FAEAB2704A6EC001C0986 /* RustLibrarySwiftInterface.swift */; };
 		2D23057E26F1FE520028CB07 /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D23057D26F1FE520028CB07 /* Tests_iOS.swift */; };
@@ -45,7 +45,7 @@
 
 /* Begin PBXFileReference section */
 		2D1FAEA727049FFE001C0986 /* RustLibraryObjCWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RustLibraryObjCWrapper.h; sourceTree = "<group>"; };
-		2D1FAEA827049FFE001C0986 /* RustLibraryObjCWrapper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RustLibraryObjCWrapper.m; sourceTree = "<group>"; };
+		2D1FAEA827049FFE001C0986 /* RustLibraryObjCWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = RustLibraryObjCWrapper.mm; sourceTree = "<group>"; };
 		2D1FAEAB2704A6EC001C0986 /* RustLibrarySwiftInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustLibrarySwiftInterface.swift; sourceTree = "<group>"; };
 		2D23056226F1FE510028CB07 /* iOS_OSX_RustLibrary_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_OSX_RustLibrary_DemoApp.swift; sourceTree = "<group>"; };
 		2D23056326F1FE510028CB07 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -130,7 +130,7 @@
 				2D23056426F1FE520028CB07 /* Assets.xcassets */,
 				2D2305AD26F2090E0028CB07 /* Bridging-Header.h */,
 				2D1FAEA727049FFE001C0986 /* RustLibraryObjCWrapper.h */,
-				2D1FAEA827049FFE001C0986 /* RustLibraryObjCWrapper.m */,
+				2D1FAEA827049FFE001C0986 /* RustLibraryObjCWrapper.mm */,
 				2D1FAEAB2704A6EC001C0986 /* RustLibrarySwiftInterface.swift */,
 			);
 			path = Shared;
@@ -419,7 +419,7 @@
 				2D23058D26F1FE520028CB07 /* ContentView.swift in Sources */,
 				2D1FAEAC2704A6EC001C0986 /* RustLibrarySwiftInterface.swift in Sources */,
 				2D23058B26F1FE520028CB07 /* iOS_OSX_RustLibrary_DemoApp.swift in Sources */,
-				2D1FAEA927049FFE001C0986 /* RustLibraryObjCWrapper.m in Sources */,
+				2D1FAEA927049FFE001C0986 /* RustLibraryObjCWrapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -430,7 +430,7 @@
 				2D23058E26F1FE520028CB07 /* ContentView.swift in Sources */,
 				2D1FAEAD2704A6EC001C0986 /* RustLibrarySwiftInterface.swift in Sources */,
 				2D23058C26F1FE520028CB07 /* iOS_OSX_RustLibrary_DemoApp.swift in Sources */,
-				2D1FAEAA27049FFE001C0986 /* RustLibraryObjCWrapper.m in Sources */,
+				2D1FAEAA27049FFE001C0986 /* RustLibraryObjCWrapper.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

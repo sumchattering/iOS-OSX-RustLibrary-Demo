@@ -7,7 +7,9 @@
 
 #import "RustLibraryObjCWrapper.h"
 
+extern "C" {
 #include "RustLibrary.h"
+}
 
 @implementation RustLibraryObjCWrapper
 
